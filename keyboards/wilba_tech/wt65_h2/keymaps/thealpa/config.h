@@ -25,5 +25,6 @@
 #define NO_ACTION_ONESHOT
 #undef LOCKING_SUPPORT_ENABLE
 #undef LOCKING_RESYNC_ENABLE
+#define HCS(report) host_consumer_send(record->event.pressed ? report : 0); return false
 
 #define DEBUG_MATRIX_SCAN_RATE
